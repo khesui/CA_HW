@@ -2,9 +2,9 @@
 # For CA
 ###
 
-.mti
-.mpf
-.stackdump
+*.mti
+*.mpf
+*.stackdump
 
 #################
 ## Eclipse
