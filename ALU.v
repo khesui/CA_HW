@@ -1,22 +1,35 @@
-`timescale 1 ns/1 ns
+module ALU
+(
+    data1_i,
+    data2_i,
+    ALUCtrl_i,
+    data_o,
+    Zero_o
+);
 
-module alu (src_a, src_b, c, data_out);
-input [7:0] src_a, src_b;
-input [2:0] c;
-output [7:0] data_out;
-wire [7:0] data_out;
+input [31:0] data1_i, data2_i;
+input [2:0] ALUCtrl_i;
+output [31:0] data_o;
+output Zero_o;
 
-reg [7:0] tmp_out;
+reg [31:0] tmp_out;
+reg tmp_Zero;
 assign data_out = tmp_out;
-always @(*) begin
-   case (c)
-      3'b001: tmp_out = src_a + src_b;
-      3'b010: tmp_out = src_a - src_b;
-      3'b011: tmp_out = src_a & src_b;
-      3'b100: tmp_out = src_a | src_b;
-      3'b101: tmp_out = src_a ^ src_b;
-      default: tmp_out = src_a;
-   endcase
+assign Zero_o = tmp_Zero;
+
+always @(data1_i or data2_i or ALUCtrl_i) begin
+    case (ALUCtrl_i)
+        3'b000: tmp_out = data1_i & data2_i;
+        3'b001: tmp_out = data1_i | data2_i;
+        3'b010: tmp_out = data1_i + data2_i;
+        //3'b011: ;
+        //3'b100: ;
+        //3'b101: ;
+        3'b110: tmp_out = data1_i - data2_i;
+        3'b111: tmp_out = (data1_i < data2_i) ? 1 : 0;
+        default: tmp_out = data1_i;
+    endcase
+    tmp_Zero = (tmp_out == 0) ? 1 : 0;
 end
 
 endmodule

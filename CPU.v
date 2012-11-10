@@ -1,6 +1,6 @@
 module CPU
 (
-    clk_i, 
+    clk_i,
     rst_i,
     start_i
 );
@@ -37,7 +37,7 @@ PC PC(
 );
 
 Instruction_Memory Instruction_Memory(
-    .addr_i     (), 
+    .addr_i     (),
     .instr_o    ()
 );
 
@@ -45,11 +45,11 @@ Registers Registers(
     .clk_i      (),
     .RSaddr_i   (),
     .RTaddr_i   (),
-    .RDaddr_i   (), 
+    .RDaddr_i   (),
     .RDdata_i   (),
-    .RegWrite_i (), 
-    .RSdata_o   (), 
-    .RTdata_o   () 
+    .RegWrite_i (),
+    .RSdata_o   (),
+    .RTdata_o   ()
 );
 
 /*
@@ -76,7 +76,7 @@ Signed_Extend Signed_Extend(
     .data_o     ()
 );
 */
-  
+
 /*
 ALU ALU(
     .data1_i    (),
