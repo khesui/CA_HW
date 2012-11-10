@@ -6,10 +6,10 @@ module MUX5
     data_o
 );
 
-input [5:0] data1_i;
-input [5:0] data2_i;
+input [4:0] data1_i;
+input [4:0] data2_i;
 input select_i;
-output [5:0] data_o;
+output [4:0] data_o;
 
 reg [5:0] tmp_out;
 assign data_o = tmp_out;

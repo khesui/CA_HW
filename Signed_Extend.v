@@ -1,4 +1,4 @@
-module Sign_Extend
+module Signed_Extend
 (
     data_i,
     data_o

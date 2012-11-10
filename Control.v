@@ -9,15 +9,15 @@ module Control
 
 input [5:0] Op_i;
 output RegDst_o;
-//output [3:0] ALUOp_o;
-output [2:0] ALUOp_o;
+//output [2:0] ALUOp_o;
+output [1:0] ALUOp_o;
 output ALUSrc_o;
 output RegWrite_o;
 
-reg RType, ori, lw, sw, beq, jump;
+reg RType, ori, lw, sw, beq, jump, mul;
 reg addi;
 reg tmp_RegDst, tmp_ALUSrc, tmp_RegWrite;
-reg [2:0] tmp_ALUOp;
+reg [1:0] tmp_ALUOp;
 assign RegDst_o = tmp_RegDst;
 assign ALUOp_o = tmp_ALUOp;
 assign ALUSrc_o = tmp_ALUSrc;
@@ -32,6 +32,7 @@ always @(Op_i) begin
     jump = ~Op_i[5] & ~Op_i[4] & ~Op_i[3] & ~Op_i[2] & Op_i[1] & ~Op_i[0];
 
     addi = ~Op_i[5] & ~Op_i[4] & Op_i[3] & ~Op_i[2] & ~Op_i[1] & ~Op_i[0];
+    mul = ~Op_i[5] & Op_i[4] & Op_i[3] & ~Op_i[2] & ~Op_i[1] & ~Op_i[0];
 
     tmp_RegDst = RType;
     //tmp_RegWrite = RType | ori | lw;
