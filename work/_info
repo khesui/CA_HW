@@ -3,122 +3,142 @@ K3
 13
 cModel Technology
 Z0 dC:\Modeltech_pe_edu_10.1c\examples
-valu
+vAdder
 !i10b 1
-!s100 Q1oM;gIM9n7Y1[7BN19G^1
-IPYRT]EY:03PT_=R7WW4?h2
-V18jhfnYW^HJV:?RoiKR4K0
+!s100 :_LdN:ioLMeFcQ79m[z831
+IQ?;4e43j`[6MeOHE3?TR:1
+VQeiMRXfdPT=Ih;Gk<z^AW0
 Z1 dF:\workspace\CA_HW
-w1350044634
-8F:/workspace/CA_HW/ALU.v
-FF:/workspace/CA_HW/ALU.v
-L0 3
+w1352512354
+8F:/workspace/CA_HW/Adder.v
+FF:/workspace/CA_HW/Adder.v
+L0 1
 Z2 OP;L;10.1c;51
 r1
 !s85 0
 31
-!s108 1352383068.651000
-!s107 F:/workspace/CA_HW/ALU.v|
-!s90 -reportprogress|300|-work|work|F:/workspace/CA_HW/ALU.v|
+!s108 1352512431.540000
+!s107 F:/workspace/CA_HW/Adder.v|
+!s90 -reportprogress|300|-work|work|F:/workspace/CA_HW/Adder.v|
 !s101 -O0
 Z3 o-work work -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF -O0
-vCPU
-Z4 I<kQ`g43THIXWXmWGBoYl;3
-Z5 V3@60N9a1j4iE5=1@Q]F290
+n@adder
+valu
+Z4 IPYRT]EY:03PT_=R7WW4?h2
+Z5 V18jhfnYW^HJV:?RoiKR4K0
 R1
-Z6 w1335235291
-Z7 8F:/workspace/CA_HW/CPU.v
-Z8 FF:/workspace/CA_HW/CPU.v
+Z6 w1350044634
+Z7 8F:/workspace/CA_HW/ALU.v
+Z8 FF:/workspace/CA_HW/ALU.v
+L0 3
+R2
+r1
+31
+R3
+!i10b 1
+Z9 !s100 Q1oM;gIM9n7Y1[7BN19G^1
+!s85 0
+Z10 !s108 1352383068.651000
+Z11 !s107 F:/workspace/CA_HW/ALU.v|
+Z12 !s90 -reportprogress|300|-work|work|F:/workspace/CA_HW/ALU.v|
+!s101 -O0
+vCPU
+Z13 I<kQ`g43THIXWXmWGBoYl;3
+Z14 V3@60N9a1j4iE5=1@Q]F290
+R1
+Z15 w1335235291
+Z16 8F:/workspace/CA_HW/CPU.v
+Z17 FF:/workspace/CA_HW/CPU.v
 L0 1
 R2
 r1
 31
 R3
-Z9 n@c@p@u
-Z10 !s100 >=3@OlO`I97SiDIhY^7f12
-Z11 !s108 1352383067.895000
-Z12 !s107 F:/workspace/CA_HW/CPU.v|
-Z13 !s90 -reportprogress|300|-work|work|F:/workspace/CA_HW/CPU.v|
+Z18 n@c@p@u
+Z19 !s100 >=3@OlO`I97SiDIhY^7f12
+Z20 !s108 1352383067.895000
+Z21 !s107 F:/workspace/CA_HW/CPU.v|
+Z22 !s90 -reportprogress|300|-work|work|F:/workspace/CA_HW/CPU.v|
 !i10b 1
 !s85 0
 !s101 -O0
 vInstruction_Memory
-Z14 I:k2dRC3F7zITEdZn`iN2G0
-Z15 VN<ZzmNNSM_FS@LceORKC20
+Z23 I:k2dRC3F7zITEdZn`iN2G0
+Z24 VN<ZzmNNSM_FS@LceORKC20
 R1
-R6
-Z16 8F:/workspace/CA_HW/Instruction_Memory.v
-Z17 FF:/workspace/CA_HW/Instruction_Memory.v
+R15
+Z25 8F:/workspace/CA_HW/Instruction_Memory.v
+Z26 FF:/workspace/CA_HW/Instruction_Memory.v
 L0 1
 R2
 r1
 31
 R3
-Z18 n@instruction_@memory
-Z19 !s100 7Rz5Im5:FNhIi>XMa9zOV1
-Z20 !s108 1352383068.062000
-Z21 !s107 F:/workspace/CA_HW/Instruction_Memory.v|
-Z22 !s90 -reportprogress|300|-work|work|F:/workspace/CA_HW/Instruction_Memory.v|
+Z27 n@instruction_@memory
+Z28 !s100 7Rz5Im5:FNhIi>XMa9zOV1
+Z29 !s108 1352383068.062000
+Z30 !s107 F:/workspace/CA_HW/Instruction_Memory.v|
+Z31 !s90 -reportprogress|300|-work|work|F:/workspace/CA_HW/Instruction_Memory.v|
 !i10b 1
 !s85 0
 !s101 -O0
 vPC
-Z23 I7HPJ?5Nkokn7MEPb7PU>`0
-Z24 V>Mc747fC^9g4zj;BV1;8@1
+Z32 I7HPJ?5Nkokn7MEPb7PU>`0
+Z33 V>Mc747fC^9g4zj;BV1;8@1
 R1
-R6
-Z25 8F:/workspace/CA_HW/PC.v
-Z26 FF:/workspace/CA_HW/PC.v
+R15
+Z34 8F:/workspace/CA_HW/PC.v
+Z35 FF:/workspace/CA_HW/PC.v
 L0 1
 R2
 r1
 31
 R3
 n@p@c
-Z27 !s100 gZN83FO1T=DkYRIFFjlAh3
-Z28 !s108 1352383068.212000
-Z29 !s107 F:/workspace/CA_HW/PC.v|
-Z30 !s90 -reportprogress|300|-work|work|F:/workspace/CA_HW/PC.v|
+Z36 !s100 gZN83FO1T=DkYRIFFjlAh3
+Z37 !s108 1352383068.212000
+Z38 !s107 F:/workspace/CA_HW/PC.v|
+Z39 !s90 -reportprogress|300|-work|work|F:/workspace/CA_HW/PC.v|
 !i10b 1
 !s85 0
 !s101 -O0
 vRegisters
-Z31 IZ_]I3DI<@oBe@NHef]kb30
-Z32 V3TYm1U0R2EYmSNc4CjPlO0
+Z40 IZ_]I3DI<@oBe@NHef]kb30
+Z41 V3TYm1U0R2EYmSNc4CjPlO0
 R1
-R6
-Z33 8F:/workspace/CA_HW/Registers.v
-Z34 FF:/workspace/CA_HW/Registers.v
+R15
+Z42 8F:/workspace/CA_HW/Registers.v
+Z43 FF:/workspace/CA_HW/Registers.v
 L0 1
 R2
 r1
 31
 R3
-Z35 n@registers
-Z36 !s100 09`h?OS8eAo1N@U:PJobN2
-Z37 !s108 1352383068.367000
-Z38 !s107 F:/workspace/CA_HW/Registers.v|
-Z39 !s90 -reportprogress|300|-work|work|F:/workspace/CA_HW/Registers.v|
+Z44 n@registers
+Z45 !s100 09`h?OS8eAo1N@U:PJobN2
+Z46 !s108 1352383068.367000
+Z47 !s107 F:/workspace/CA_HW/Registers.v|
+Z48 !s90 -reportprogress|300|-work|work|F:/workspace/CA_HW/Registers.v|
 !i10b 1
 !s85 0
 !s101 -O0
 vTestBench
-Z40 ISLz87j5i72nF;9d=>;olH3
-Z41 VH;VS]59WmQ>4a<zRibM9Z0
+Z49 ISLz87j5i72nF;9d=>;olH3
+Z50 VH;VS]59WmQ>4a<zRibM9Z0
 R1
-R6
-Z42 8F:/workspace/CA_HW/testbench.v
-Z43 FF:/workspace/CA_HW/testbench.v
+R15
+Z51 8F:/workspace/CA_HW/testbench.v
+Z52 FF:/workspace/CA_HW/testbench.v
 L0 3
 R2
 r1
 31
 R3
-Z44 n@test@bench
+Z53 n@test@bench
+Z54 !s100 He:UzV?cP_@j[^k8dBXS>2
+Z55 !s108 1352383068.510000
+Z56 !s107 F:/workspace/CA_HW/testbench.v|
+Z57 !s90 -reportprogress|300|-work|work|F:/workspace/CA_HW/testbench.v|
 !i10b 1
-Z45 !s100 He:UzV?cP_@j[^k8dBXS>2
 !s85 0
-Z46 !s108 1352383068.510000
-Z47 !s107 F:/workspace/CA_HW/testbench.v|
-Z48 !s90 -reportprogress|300|-work|work|F:/workspace/CA_HW/testbench.v|
 !s101 -O0
