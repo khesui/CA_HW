@@ -18,7 +18,7 @@ reg tmp_Zero;
 assign data_o = tmp_out;
 assign Zero_o = tmp_Zero;
 
-always @(*) begin
+always @(data1_i or data2_i or ALUCtrl_i) begin
     case (ALUCtrl_i)
         3'b000: tmp_out = data1_i & data2_i;
         3'b001: tmp_out = data1_i | data2_i;
